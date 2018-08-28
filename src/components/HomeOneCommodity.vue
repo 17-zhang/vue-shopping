@@ -75,7 +75,7 @@
         if (op === 'plus') {
           this.$store.commit('addGoods', id)
         } else {
-          let count = this.$store.state.cartGoods.filter(var => {
+          let count = this.$store.state.cartGoods.filter(val => {
             return val.id === id
           })[0].count
           if (count === 1) {
