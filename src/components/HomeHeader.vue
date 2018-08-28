@@ -43,6 +43,7 @@
       }
     },
     methods: {
+      // 改变商品类型
       changeGoodsType () {
         this.$store.state.GoodsCurrentSelKind = this.kindTiType.get(this.goodsType)
       }

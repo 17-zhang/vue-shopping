@@ -36,7 +36,7 @@
 
 <script type="text/ecmascript-6">
   import HomeHeader from './HomeHeader'
-  import OneCommodity from './OneCommodity'
+  import OneCommodity from './HomeOneCommodity'
 
   export default {
     name: 'home',
