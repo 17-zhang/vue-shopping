@@ -75,8 +75,8 @@
         if (op === 'plus') {
           this.$store.commit('addGoods', id)
         } else {
-          let count = this.$store.state.cartGoods.filter(val => {
-            return val.id === id
+          let count = this.$store.state.cartGoods.filter(val => { // 过滤cartGoods数据
+            return val.id === id // 得到返回值
           })[0].count
           if (count === 1) {
             this.$store.commit('deleteGoodsFromCart', id)
