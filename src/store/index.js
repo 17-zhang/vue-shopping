@@ -52,6 +52,15 @@ export default new Vuex.Store({
     // 改变选中的商品种类
     changeCurrentSelKind (state, kind) {
       state.GoodsCurrentSelKind = kind
+    },
+    // 登录
+     login (state, username) {
+      state.username = username
+      state.isLogin = true // 已经处于登录状态了
+    },
+    // 退出登录
+    logout (state) {
+      state.isLogin = false
     }
   }
 })

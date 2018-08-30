@@ -87,6 +87,7 @@
 
 <style lang="scss" scoped>
   @import "../assets/css/variable.scss";
+
   .app-nav {
     position: fixed;
     bottom: 0;
@@ -96,6 +97,7 @@
     height: $NavHeight;
     z-index: 999;
   }
+
   .nav-item {
     height: 100%;
     display: inline-block;
@@ -109,33 +111,40 @@
     height: $NavHeight * 0.75;  /* 45px */
     margin-top: $NavHeight * 0.125;  /* 7.5px */
   }
+
   .homeImg {
     background-image: url('../../static/icon/home.png');
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: $NavHeight * 0.75 * 3 $NavHeight * 0.75;  /* 135px 45px*/
   }
+
   .homeImgOn {
     background-position: 100% 100%;
   }
+
   .cartImg {
     background-image: url("../../static/icon/cart.png");
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: $NavHeight * 0.75 * 3 $NavHeight * 0.75;
   }
+
   .cartImgOn {
     background-position: 100% 100%;
   }
+
   .profileImg {
     background-image: url("../../static/icon/profile.png");
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: $NavHeight * 0.75 * 3 $NavHeight * 0.75;
   }
+
   .profileImgOn {
     background-position: 100% 100%;
   }
+
   .cart-counter {
     position: absolute;
     width: 25px;

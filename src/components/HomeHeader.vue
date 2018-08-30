@@ -5,12 +5,7 @@
       <!--tabPosition="left|right|top|bottom" 设置标签的位置-->
       <!--tab-click事件：被选中时触发-->
       <!--type="border-card"：定义tab选项卡的风格类型-->
-      <el-tabs
-        :tab-position="'top'"
-        type="border-card"
-        style="height: 39px"
-        v-model="goodsType"
-        @tab-click="changeGoodsType">
+      <el-tabs :tab-position="'top'" type="border-card" style="height: 39px" v-model="goodsType" @tab-click="changeGoodsType">
         <el-tab-pane label="全部" name="全部"></el-tab-pane>
         <el-tab-pane label="水果" name="水果"></el-tab-pane>
         <el-tab-pane label="蔬菜" name="蔬菜"></el-tab-pane>
@@ -61,6 +56,7 @@
     width: 100%;
     background-color: #fff;
     z-index: 999;
+
     .top-text {
       height: $HomeHeaderHeight - 40px;
       line-height: $HomeHeaderHeight - 40px;

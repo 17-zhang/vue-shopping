@@ -35,8 +35,8 @@
 </template>
 
 <script type="text/ecmascript-6">
-  import HomeHeader from './HomeHeader'
-  import OneCommodity from './HomeOneCommodity'
+  import HomeHeader from './HomeHeader.vue'
+  import OneCommodity from './HomeOneCommodity.vue'
 
   export default {
     name: 'home',
@@ -100,22 +100,27 @@
     padding-bottom: $NavHeight + 5px;
     padding-top: $HomeHeaderHeight;
   }
+
   .home-main {
     width: 100%;
     overflow-x: hidden;
   }
+
   .goods {
     width: 100%;
     list-style: none;
     padding: 0;
   }
+
   .goods > li {
     width: 100%;
   }
+
   .no-more-goods {
     height: 40px;
     line-height: 40px;
   }
+
   .slideInRight {
     animation-duration: 0.25s;  /* 定义动画完成一个周期所需要的时间，以秒或毫秒计。 */
   }
