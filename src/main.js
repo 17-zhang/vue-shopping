@@ -8,6 +8,12 @@ import store from './store'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 
+import './ui/element-ui'
+import './ui/my-own-ui'
+
+import './assets/css/base.css'
+import './assets/css/vue2-animate.css'
+
 Vue.use(VueAxios, axios)
 
 Vue.config.productionTip = false // 阻止vue在启动时生成提示

@@ -18,6 +18,7 @@
       </div>
       <!--购物车按钮-->
       <div class="cart-btn">
+        <!--操作购物车加减组件-->
         <my-input-number :count="counter" @changeNumberEvent="getOperator"></my-input-number>
       </div>
     </div>

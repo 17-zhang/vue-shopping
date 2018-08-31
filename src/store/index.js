@@ -5,6 +5,22 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    username: '', // 用户名
+    isLogin: false,
+    address: [
+      {
+        name: '张三',
+        phone: 11111111,
+        city: '广州',
+        detailAdd: '广州市白云区化成大道111号'
+      },
+      {
+        name: '李四',
+        phone: '12344566666',
+        city: '南京',
+        detailAdd: '建邺区富春江东街111号'
+      }
+    ],
     cartGoods: [], // 添加到购物车中的商品
     cartCounter: 0, // 购物车物品总数
     GoodsCurrentSelKind: 0 // 表示显示全部分类商品

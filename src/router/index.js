@@ -5,6 +5,9 @@ import Cart from '../components/Cart'
 import Login from '../components/Login'
 import Profile from '../components/Profile'
 import DetailsPage from '../components/DetailsPage'
+import EditAddressPage from '../components/EditAddressPage'
+import AddNewAddress from '../components/AddNewAddress'
+import ModifyAddress from '../components/ModifyAddress'
 
 Vue.use(Router)
 
@@ -31,7 +34,21 @@ export default new Router({
     },
     {
       path: '/Profile',
-      component: Profile
+      component: Profile,
+      childen: [
+        {
+          path: 'EditAddressPage',
+          component: EditAddressPage
+        },
+        {
+          path: 'AddNewAddress',
+          component: AddNewAddress
+        },
+        {
+          path: 'ModifyAddress',
+          component: ModifyAddress
+        }
+      ]
     },
     {
       path: '/DetailsPage',
