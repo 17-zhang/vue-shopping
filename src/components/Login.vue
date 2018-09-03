@@ -31,7 +31,7 @@
     name: 'login',
     data () {
       return {
-        username: '王小明',
+        username: '张毅琦',
         password: '123456'
       }
     },

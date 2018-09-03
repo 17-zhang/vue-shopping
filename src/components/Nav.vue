@@ -32,7 +32,8 @@
       return {
         homeImgOn: '',
         cartImgOn: '',
-        profileImgOn: ''
+        profileImgOn: '',
+        imgLoadCount: 0
       }
     },
     methods: {
@@ -45,15 +46,15 @@
       // 更新导航图标
       autoChangeCurrentImg () {
         let currentPath = this.currentPath
-        if (currentPath.include('Home')) { // 判断当前路径是否为 Home
+        if (currentPath.includes('Home')) { // 判断当前路径是否为 Home
           this.homeImgOn = 'homeImgOn'
           this.cartImgOn = ''
           this.profileImgOn = ''
-        } else if (currentPath.include('Cart')) { // 判断当前路径是否为 Cart
+        } else if (currentPath.includes('Cart')) { // 判断当前路径是否为 Cart
           this.homeImgOn = ''
           this.cartImgOn = 'cartImgOn'
           this.profileImgOn = ''
-        } else if (currentPath.include('Profile')) { // 判断当前路径是否为 Profile
+        } else if (currentPath.includes('Profile')) { // 判断当前路径是否为 Profile
           this.homeImgOn = ''
           this.cartImgOn = ''
           this.profileImgOn = 'profileImgOn'
@@ -94,6 +95,8 @@
     left: 0;
     width: 100%;
     border-top: 1px solid #eee;
+    font-size: 0;
+    background-color: #fff;
     height: $NavHeight;
     z-index: 999;
   }

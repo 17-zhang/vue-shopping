@@ -110,9 +110,9 @@
       pay () {
         let result = this.amount - this.redPacket
         if (result >= 49) {
-          this.needPostage = false
+          result.needPostage = false
         } else {
-          this.needPostage = true
+          result.needPostage = true
         }
         if (this.needPostage) {
           result += this.postage

@@ -63,7 +63,7 @@
     },
     computed: {
       itemIndex () {
-        return this.$router.query.index
+        return this.$route.query.index
       },
       newAddForm () {
         return this.$store.state.address[this.itemIndex]
@@ -81,7 +81,7 @@
       },
       // 提交表单
       submitForm (formName) {
-        this.$refs[formName].validate(valid) => {
+        this.$refs[formName].validate((valid) => {
           if (valid) {
             this.$store.commit('modifyAddress', {
               index: this.itemIndex,
@@ -90,7 +90,7 @@
           } else {
             return false
           }
-        }
+        })
       },
       deleteAddress () {
         this.$store.commit('deleteAddress', this.itemIndex)
@@ -110,7 +110,7 @@
     height: 100%;
     position: absolute;
     z-index: 1001;
-    background-color: #ff65af;
+    background-color: #f5f5f5;
 
     header {
       position: relative;

@@ -18,6 +18,11 @@ Vue.use(VueAxios, axios)
 
 Vue.config.productionTip = false // 阻止vue在启动时生成提示
 
+// 页面跳转后，返回顶部
+router.afterEach(() => {
+  window.scrollTo(0, 0)
+})
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

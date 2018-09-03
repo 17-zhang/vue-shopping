@@ -9,16 +9,16 @@ export default new Vuex.Store({
     isLogin: false,
     address: [
       {
-        name: '张三',
-        phone: 11111111,
-        city: '广州',
-        detailAdd: '广州市白云区化成大道111号'
+        name: '张毅琦',
+        phone: 15850520410,
+        city: '南京',
+        detailAdd: '建邺区奥体大街007'
       },
       {
-        name: '李四',
+        name: '仿生人',
         phone: '12344566666',
         city: '南京',
-        detailAdd: '建邺区富春江东街111号'
+        detailAdd: '建邺区奥体大街007'
       }
     ],
     cartGoods: [], // 添加到购物车中的商品
@@ -70,13 +70,25 @@ export default new Vuex.Store({
       state.GoodsCurrentSelKind = kind
     },
     // 登录
-     login (state, username) {
+    login (state, username) {
       state.username = username
       state.isLogin = true // 已经处于登录状态了
     },
     // 退出登录
     logout (state) {
       state.isLogin = false
+    },
+    // 添加新地址
+    addNewAddress (state, newAdd) {
+      state.address.push(newAdd)
+    },
+    // 修改地址
+    modifyAddress (state, item) {
+      state.address[item.index] = item.value
+    },
+    // 删除地址
+    deleteAddress (state, index) {
+      state.address.splice(index, 1)
     }
   }
 })
