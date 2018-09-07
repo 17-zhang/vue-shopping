@@ -51,14 +51,14 @@ export default new Vuex.Store({
       state.cartGoods.some(val => {
         if (val.id === itemId) {
           val.count++
-          return false
+          return true
         }
       })
     },
     // 减少商品
     reduceGoods (state, itemId) {
       state.cartCounter--
-      state.cartCounters.some(val => {
+      state.cartGoods.some(val => {
         if (val.id === itemId) {
           val.count--
           return true

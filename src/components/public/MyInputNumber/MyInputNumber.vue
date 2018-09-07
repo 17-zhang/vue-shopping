@@ -43,7 +43,7 @@
 
 <style lang="scss" scoped>
 
-  .el-icon-remove-outline, el-icon-circle-plus {
+  .el-icon-remove-outline, .el-icon-circle-plus {
     font-size: 18px;
   }
 

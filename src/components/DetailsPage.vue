@@ -11,7 +11,7 @@
       <h3>商品详情</h3>
     </header>
     <!--内容区域-->
-    <main class="dpp-main">
+    <main class="dp-main">
       <div class="goods-img-wrap">
         <img :src="goods.img" alt="">
       </div>
